@@ -4,72 +4,59 @@
     "$className": "DataModel",
 
     "ReplicatedStorage": {
-      "Shared": {
-        "$path": "src/shared"
+
+      "Blink":{
+        "$path": "src/ReplicatedStorage/Blink"
       },
+
+      "Framework": {
+        "$path": "src/ReplicatedStorage/Framework"
+      },
+
       "Packages": {
         "$path": "Packages"
+      },
+
+      "Modules": {
+        "$path": "src/ReplicatedStorage/Modules"
       }
+
     },  
 
-    "ServerScriptService": {
-      "Server": {
-        "$path": "src/server"
+    "ServerStorage": {
+
+      "ServerFramework": {
+        "$path": "src/ServerStorage/ServerFramework"
+      },
+
+      "ServerModules": {
+        "$path": "src/ServerStorage/ServerModules"
+      },
+
+      "ServerPackages": {
+        "$path": "ServerPackages"
       }
+
+    },
+
+    "ServerScriptService": {
+
+      "ServerInit": {
+        "$path": "src/Server"
+      }
+
     },
 
     "StarterPlayer": {
       "StarterPlayerScripts": {
-        "Client": {
-          "$path": "src/client"
-        }
-      }
-    },
 
-    "Workspace": {
-      "$properties": {
-        "FilteringEnabled": true
-      },
-      "Baseplate": {
-        "$className": "Part",
-        "$properties": {
-          "Anchored": true,
-          "Color": [
-            0.38823,
-            0.37254,
-            0.38823
-          ],
-          "Locked": true,
-          "Position": [
-            0,
-            -10,
-            0
-          ],
-          "Size": [
-            512,
-            20,
-            512
-          ]
+        "ClientInit": {
+          "$path": "src/Client"
         }
-      }
-    },
-    "Lighting": {
-      "$properties": {
-        "Ambient": [
-          0,
-          0,
-          0
-        ],
-        "Brightness": 2,
-        "GlobalShadows": true,
-        "Outlines": false,
-        "Technology": "Voxel"
-      }
-    },
-    "SoundService": {
-      "$properties": {
-        "RespectFilteringEnabled": true
+
       }
     }
+
+
   }
 }
